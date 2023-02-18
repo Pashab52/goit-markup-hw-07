@@ -444,20 +444,55 @@ color: var(--hover-link-color);
     background: var(--light-bg-color)
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.team .container{
+    padding-left: 108px;
+    padding-right: 108px;
+}
+}
 
 .team-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: var(--row-gap);
+    --gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+.team-list {
+    --gap: 24px;
     gap: var(--gap);
+    row-gap: 64px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .team-list {
+        --items:4;
+    }
 }
 
 .team-item {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--prim-bg-color);
-    flex-basis: calc((100% - var(--gap) * (var(--items) - 1)) / var(--items));
+ 
 }
+
+
+@media screen and (min-width: 768px){
+    .team-item {
+            flex-basis: calc((100% - var(--gap) * (var(--items) - 1)) / var(--items));
+        }
+}
+
+
 /* .team-img {
+    object-fit: scale-down;
+   
 }  */
+
 .team-text-container {
     padding: 32px 16px 32px 16px;
 }
@@ -509,7 +544,12 @@ color: var(--hover-link-color);
   |============================
 */
 
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .customers .container {
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+}
 
 
 .customers-list{
@@ -523,7 +563,6 @@ color: var(--hover-link-color);
 
 @media screen and (min-width: 768px) {
     .customers-list {
-        justify-content: center;
         --items:3;
         --gap:24px;
     }
@@ -546,8 +585,8 @@ color: var(--hover-link-color);
 
 @media screen and (min-width: 768px) {
     .customers-item {
-        max-width: 168px;
-        /* flex-basis: calc((100% - var(--gap) * (var(--items) - 1)) / var(--items)); */
+        /* max-width: 168px; */
+        flex-basis: calc((100% - var(--gap) * (var(--items) - 1)) / var(--items));
     }
 
 }
@@ -574,7 +613,7 @@ color: var(--hover-link-color);
 
 @media screen and (min-width: 768px) {
     .customers-link {
-        padding: 15px 32px;
+        padding: 15px 31px;
     }
 
 }
