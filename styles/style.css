@@ -223,8 +223,19 @@ color: var(--hover-link-color);
 
 .contacts {
     margin-left: auto;
-}
     
+}
+
+@media screen and (min-width: 768px) and (max-width:1199px) {
+    .contacts-list {
+        flex-direction: column;
+        gap: 4px;
+        padding-top: 24px;
+        padding-bottom: 10px;
+
+    }
+}
+ 
 
 .contacts-list {
     display: flex;
@@ -233,7 +244,14 @@ color: var(--hover-link-color);
     margin-left: 10px;
    
 }
-/* .contacts-item { */
+
+@media screen and (min-width: 768px) and (max-width:1199px) {
+    .contacts-list {
+        flex-direction: column;
+        gap: 4px;
+        
+    }
+}
 
 
 .contacts-link {
@@ -243,6 +261,17 @@ color: var(--hover-link-color);
     padding: 24px 0 28px 0;
     transition: color var(--animation-time);
 }
+
+
+@media screen and (min-width: 768px) and (max-width:1199px) {
+    .contacts-link {
+        font-size: 12px;
+        line-height: calc(16 / 12);
+        padding: 0;
+        }
+}
+
+
 
 .contacts-link:hover,
 .contacts-link:focus {
@@ -262,6 +291,9 @@ color: var(--hover-link-color);
     display: none;
 }
 
+.mob-soc-list{
+    display: none;
+}
 
 @media screen and (max-width: 767px) {
     .header-container{
@@ -297,7 +329,7 @@ color: var(--hover-link-color);
         margin-right: auto;
     }
     .contacts {
-        margin:0;
+        margin:0 0 48px 0;
         margin-top: auto;
     }
 
@@ -311,7 +343,7 @@ color: var(--hover-link-color);
     .contacts-link{
         padding: 0;
         font-weight: 600;
-        font-size: 36px;
+        font-size: 28px;
         line-height: calc(40 / 36);
         color: #4D5AE5;
     }
@@ -371,9 +403,13 @@ color: var(--hover-link-color);
         background-color: var(--hover-btn-bg-color);
         fill: var(--light-txt-color);
     }
+
+    .mob-soc-list {
+        display: flex;
+        column-gap: 56px;
+
+    }
 }
-
-
 
 
 
@@ -572,10 +608,17 @@ color: var(--hover-link-color);
 */
 
 .we-do {
+    display: none;
     padding-top: 0;
     /* background-color: navy; */
 }
 
+@media screen and (min-width: 1200px) {
+    .we-do {
+        display: block;  
+        }
+    
+}
 
 .we-do-list {
     display: flex;
