@@ -49,7 +49,6 @@ line-height: calc(24 / 16);
 
 .modal-open{
 overflow:hidden;
-
 }
 
 ul {
@@ -1306,6 +1305,7 @@ position: absolute;
 }
 
 .callback-title{
+    display: block;
     font-weight: 500;
     text-align: center;
     margin-bottom: 16px;
@@ -1337,12 +1337,10 @@ position: absolute;
     border: 1px solid #4D5AE5;
 }
 
-.input-wrapper{
-    position: relative;
-  
-}
+
 
 .callback-field{
+    position: relative;
     display: block;
     margin-bottom: 8px;
 }
@@ -1358,7 +1356,6 @@ position: absolute;
     position: absolute;
     top: 50%;
     left: 16px;
-    transform: translateY(-50%);
     transition: fill var(--animation-time);
 }
 
