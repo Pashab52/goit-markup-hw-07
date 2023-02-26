@@ -839,7 +839,7 @@ color: var(--hover-link-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 40px;
+    padding: 15px 15px;
     border: 1px solid var(--customers-logo-color);
     border-radius: 4px;
     fill: var(--customers-logo-color);
